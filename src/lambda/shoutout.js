@@ -1,8 +1,14 @@
 exports.handler = (event, context, callback) => {
   // Function code goes here
-
-  const body =
-    "text=Hi&attachments=%5B%7B%22color%22%3A%22good%22%2C%22fallback%22%3A%22plain+text%22%2C%22text%22%3A%22colored+text%22%7D%5D";
+  const body = {
+    response_type: "in_channel",
+    text: "It's 80 degrees right now.",
+    attachments: [
+      {
+        text: "Partly cloudy today and tomorrow"
+      }
+    ]
+  };
 
   callback(null, {
     statusCode: 200,
