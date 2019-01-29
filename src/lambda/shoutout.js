@@ -1,6 +1,6 @@
 exports.handler = (event, context, callback) => {
   // Function code goes here
-  const body = {
+  const body = JSON.stringify({
     response_type: "in_channel",
     text: "It's 80 degrees right now.",
     attachments: [
@@ -8,7 +8,7 @@ exports.handler = (event, context, callback) => {
         text: "Partly cloudy today and tomorrow"
       }
     ]
-  };
+  });
 
   callback(null, {
     statusCode: 200,
