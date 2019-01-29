@@ -10,10 +10,10 @@ exports.handler = (event, context, callback) => {
     ]
   };
 
-  return { isBase64Encoded: True, statusCode: 200, headers: {}, body: body };
-
-  //   callback(null, {
-  //     statusCode: 200,
-  //     body: body
-  //   });
+  callback(null, {
+    isBase64Encoded: True,
+    statusCode: 200,
+    headers: {},
+    body: body
+  });
 };
