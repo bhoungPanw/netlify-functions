@@ -1,14 +1,8 @@
 exports.handler = (event, context, callback) => {
   // Function code goes here
-  const body = {
-    response_type: "in_channel",
-    text: "It's 80 degrees right now.",
-    attachments: [
-      {
-        text: "Partly cloudy today and tomorrow"
-      }
-    ]
-  };
+
+  const body =
+    "text=Text here.&username=otherusername&response_type=in_channel";
 
   callback(null, {
     isBase64Encoded: True,
