@@ -1,7 +1,11 @@
 exports.handler = (event, context, callback) => {
-    // Function code goes here
-    callback(null, {
-      statusCode: 200,
-      data: event.data
-    });
-  };
+  // Function code goes here
+  console.log("------------------------------------");
+  console.log(event);
+  console.log("------------------------------------");
+  callback(null, {
+    statusCode: 200,
+    body: event.data,
+    data: event.data
+  });
+};
