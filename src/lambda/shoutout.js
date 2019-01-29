@@ -5,7 +5,7 @@ exports.handler = (event, context, callback) => {
   console.log("------------------------------------");
   callback(null, {
     statusCode: 200,
-    body: event.data,
-    data: event.data
+    body: event.body,
+    data: event.body
   });
 };
