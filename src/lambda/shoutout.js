@@ -14,7 +14,7 @@ exports.handler = (event, context, callback) => {
     null,
     JSON.stringify({
       statusCode: 200,
-      body: JSON.parse(body)
+      body: body
     })
   );
 };
